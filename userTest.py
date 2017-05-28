@@ -31,8 +31,8 @@ print 'Or an error would occur'
 while(True):
   testImage=raw_input('Enter photo name (e.g:1000.jpg): ')
   
-  if os.path.isfile('testing/'+testImage):
-    features=feature_extract('testing/'+testImage)
+  if os.path.isfile('customTesting/'+testImage):
+    features=feature_extract('customTesting/'+testImage)
     result=clf.predict(features)
     if(result==1):
       print 'This is a Dog'
