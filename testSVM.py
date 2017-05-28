@@ -5,14 +5,14 @@ from sklearn.svm import SVC
 import numpy as np
 
 train_desc=list()
-with open ('Training 1000-30/train_desc.txt', 'rb') as fp:
+with open ('Training 2000-40/train_desc.txt', 'rb') as fp:
      train_desc = pickle.load(fp)
 
 train_labels=list()
-with open ('Training 1000-30/train_labels.txt', 'rb') as fp:
+with open ('Training 2000-40/train_labels.txt', 'rb') as fp:
      train_labels = pickle.load(fp)
 
-dictionary =np.load('Training 1000-30/dictionary.npy')
+dictionary =np.load('Training 2000-40/dictionary.npy')
 
 sift2 = cv2.xfeatures2d.SIFT_create()
 bowDiction = cv2.BOWImgDescriptorExtractor(sift2, cv2.BFMatcher(cv2.NORM_L2))

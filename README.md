@@ -11,3 +11,5 @@ and when prompted enter the photo name as e.g: 100.jpg such that this image is i
 Result precsion can be increased by increasing clusters number in the ModelTrainng.py file and also by increaing 
 training samples in training folder
 
+Atteched two training results you can switch between them in test code 
+
